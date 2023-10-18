@@ -11,8 +11,8 @@ public class Palindrom_Check {
 		System.out.println("Please enter Text");
 		String s = sc.next();
 		String revs="";
-		String pattern = "[\s]";
-		s=s.replaceAll(pattern, "");
+	//	String pattern = "\s";
+//		s=s.replaceAll(pattern, "");
 		char c[] = s.toCharArray();
 //		char rc[]= new char[s.length()];
 		for(int i=s.length()-1; i>=0; i--) {

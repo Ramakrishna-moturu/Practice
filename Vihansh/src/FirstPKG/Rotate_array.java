@@ -9,17 +9,17 @@ public class Rotate_array {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int ar[] = { 1, 2, 3, 4, 5 };
-		
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("How many clock turns");
-		int ct = sc.nextInt()%ar.length;
+		int ct = sc.nextInt() % ar.length;
 		int ra[] = new int[ar.length];
 		for (int i = 0; i < ar.length; i++) {
-			int index = i - ct;
-			if (index >= 0) {
-				ra[i] = ar[index];
+			int ind = (i - ct) % (ar.length);
+			if (ind >= 0) {
+				ra[i] = ar[ind];
 			} else {
-				ra[i] = ar[ar.length + index];
+				ra[i] = ar[ar.length + ind];
 			}
 		}
 		for (int j = 0; j < ra.length; j++) {

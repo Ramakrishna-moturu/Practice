@@ -10,7 +10,7 @@ public class StringConcepts {
 		String s1 = "Rama Krishna";
 //		New Memory will be created as new string	
 		String s2 = new String("Vihansh");
-		String s3 = new String("Vihansh");
+		String s3 = new String("Vihansh Chinnodu");
 //		Split	
 		String[] SA = s1.split(" ");
 		for (String s : SA) {

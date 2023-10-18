@@ -17,5 +17,8 @@ public class FirstClass {
 		Driver.findElement(By.linkText("ALL COURSES")).click();
 		
 	}
+	public void testmethod() {
+		System.out.println("From Firstclass of PKG1");
+	}
 
 }
